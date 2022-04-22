@@ -4,17 +4,17 @@
 
 .color {
   display: inline-block;
-  border: 1px solid black ;
+  border: 1px solid black;
   width: 40px;
   height: 40px;
 }
 
 .blue {
-  background-color: blue;  
+  background-color: black;  
 }
 
 .violet {
-  background-color:blueviolet;
+  background-color: blueviolet;
 }
 
 .lime {
