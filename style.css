@@ -24,3 +24,17 @@
 .red {
   background-color: red;
 }
+
+#pixel-board {
+  display: inline-block;
+  width: 210px;
+  background-color: white;
+}
+
+.pixel {
+  display: inline-block;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
