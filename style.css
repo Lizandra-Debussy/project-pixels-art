@@ -9,7 +9,7 @@
   height: 40px;
 }
 
-.blue {
+.black {
   background-color: black;  
 }
 
@@ -28,7 +28,6 @@
 #pixel-board {
   display: inline-block;
   width: 210px;
-  background-color: white;
 }
 
 .pixel {
