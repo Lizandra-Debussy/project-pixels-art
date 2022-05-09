@@ -1,4 +1,4 @@
-// Cria elemento HTML 
+// Cria elemento HTML
 function criaDivElement(coluna) {
 
   for(let index = 0; index < coluna; index +=1) {
@@ -17,58 +17,36 @@ function criaDivElement(coluna) {
 }
 criaDivElement(5);
 
-let classColor = document.querySelectorAll('.color');
-for(index = 0; index < classColor.length; index +=1) {
-  classColor[index].addEventListener('click', selectedColor);
-}
-let acessarClassPixel = document.getElementsByClassName('pixel');
-for(index = 0; index < acessarClassPixel.length; index +=1){
-  acessarClassPixel[index].addEventListener('click', selectedPixel);
-}
+// Requisito 7:
+const acessaCor = document.querySelectorAll('.color');
+for (let index = 0; index < acessaCor.length; index +=1)
+  acessaCor[index].addEventListener('click', selecionaCor);
 
-function selectedColor(e) {
-  for(let index = 0; index < classColor.length; index +=1 ) {
-    removeSelectedClass(classColor[index]);
-  }
-  addSelectedClass(e.target);
+function selecionaCor(event) {
+  const selected =  document.querySelector('.selected');
+  selected.classList.remove('selected');
+  event.target.classList.add('selected');
 }
 
-function selectedElement() {
-  return document.getElementsByClassName('color')[0];
-  
+// Requisito 8:
+const pixels = document.querySelectorAll('.pixel');
+for (let percorrePixel = 0; percorrePixel < pixels.length; percorrePixel +=1) {
+  pixels[percorrePixel].addEventListener('click', preenchePixel);
 }
 
-function removeSelectedClass(element) {
-  element.classList.remove('selected');
-}
-
-function addSelectedClass(element) {
-  element.classList.add('selected');
-}
-
-
-function selectedPixel(e) {
-  let selecionaCor =  selectedElement();
-  let color = colherCor(selecionaCor);
-  let click = e.target;
-  cobrirComCor(click, color);
-}
-
-function colherCor(element) {
-  return element.style.backgroundColor;
-}
-
-function cobrirComCor(element, color) {
-  element.style.backgroundColor = color;
+function preenchePixel(event) {
+  const classeSelected = document.querySelector('.selected');
+  const importandoCor = window.getComputedStyle(classeSelected, null).getPropertyValue('background-color');
+  event.target.style.backgroundColor = importandoCor;
 }
 
 // Requisito 9:
-let clearBoard = document.getElementById('clear-board');
-clearBoard.addEventListener('click', reset);
+// let clearBoard = document.getElementById('clear-board');
+// clearBoard.addEventListener('click', reset);
 
-function reset(){
-  let pixelBoard = document.getElementsByClassName('pixel');
-  for (let index = 0; index < pixels.length; index += 1) {
-    pixelBoard[index].style.backgroundColor = 'white';
-  }
-}
+// function reset(){
+//   let pixelBoard = document.getElementsByClassName('pixel');
+//   for (let index = 0; index < pixels.length; index += 1) {
+//     pixelBoard[index].style.backgroundColor = 'white';
+//   }
+// }
