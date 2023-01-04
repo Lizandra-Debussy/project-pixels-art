@@ -75,8 +75,3 @@ function user() {
   });
 }
 user();
-
-  // Fontes:
-// https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp
-// Mentoria Summer Trybe com Bruno Feu
-
