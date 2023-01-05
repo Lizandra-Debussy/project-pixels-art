@@ -19,7 +19,7 @@ Implementar uma paleta de cores usando `javascript`, `css` e `html`.
 <details>
   <summary>
     <strong>Requisitos obrigatórios:</strong>
-  </summary>
+  </summary><br>
   
 - Adicione a página o título "Paleta de Cores".
 - Adicione a página uma paleta de quatro cores distintas.
@@ -35,7 +35,7 @@ Implementar uma paleta de cores usando `javascript`, `css` e `html`.
 <details>
   <summary>
     <strong>Requisitos bônus:</strong>
-  </summary>
+  </summary><br>
 
 - Faça o quadro de pixels ter seu tamanho definido pelo usuário.
 - Limite o tamanho do mínimo e máximo do board.
@@ -45,3 +45,9 @@ Implementar uma paleta de cores usando `javascript`, `css` e `html`.
 ## Resultado Final
 
 Desempenho: 100% nos requisitos obrigatórios e 92% nos requisitos totais.
+
+<details>
+  
+![resultado final arte com pixels](./p.png)
+  
+</details>
