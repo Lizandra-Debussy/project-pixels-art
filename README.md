@@ -1,13 +1,19 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Boas vindas ao repositório do projeto Pixels Art!
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Projeto desenvolvido durante o módulo de fundamentos - Curso de Desenvolvimento WEB - Trybe.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## Objetivo
+
+Implementar uma página web na qual contenha uma paleta de cores funcional que poderá ser utilizada para criar desenhos em pixels.
+
+## Habilidades
+
+- Manipular o DOM;
+
+- Manipular o Javascript.
+
+## Desenvolvimento
+
+- Implementar uma paleta de cores usando `javascript`, `css` e `html`.
+
+## Resultado Final
